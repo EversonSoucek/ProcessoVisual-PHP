@@ -20,7 +20,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
 <head>
     <meta charset="UTF-8">
     <title>Visual software</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./estilosIndex.css">
 </head>
 <body>
     <div class="header">
