@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $numero = $_POST['numero'];
 
-    // Dados para enviar
     $dadosParaEnviar = json_encode([
         'nome' => $nome,
         'cpf' => $cpf,
@@ -14,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'numero' => $numero,
     ]);
 
-    // Inicializa cURL
     $ch = curl_init("http://localhost:3500/{$id}");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
@@ -24,7 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'Content-Length: ' . strlen($dadosParaEnviar)
     ]);
 
-    // Envia a solicitação
     $response = curl_exec($ch);
     $err = curl_error($ch);
     curl_close($ch);
@@ -32,11 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($err) {
         echo "cURL Error #:" . $err;
     } else {
-        header('Location: index.php'); // Redireciona de volta para a página principal após sucesso
+        header('Location: index.php'); 
         exit;
     }
 } else {
-    header('Location: index.php'); // Redireciona de volta se não for um POST
+    header('Location: index.php'); 
     exit;
 }
 ?>

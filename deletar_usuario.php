@@ -2,14 +2,11 @@
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Inicializa cURL
-    $ch = curl_init('http://localhost:3500/' . $id);  // Adapte a URL conforme necessário
+    $ch = curl_init('http://localhost:3500/' . $id);  
 
-    // Configura a solicitação DELETE
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-    // Envia a solicitação e fecha a sessão cURL
     $response = curl_exec($ch);
     $err = curl_error($ch);
     curl_close($ch);
@@ -21,7 +18,7 @@ if (isset($_GET['id'])) {
         if (isset($response['error'])) {
             echo "Erro ao deletar usuário: " . $response['error'];
         } else {
-            header('Location: index.php'); // Redireciona de volta para a página principal
+            header('Location: index.php');
             exit;
         }
     }

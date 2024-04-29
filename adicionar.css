@@ -7,7 +7,7 @@ body {
 .container {
     width: 80%;
     margin: auto;
-    max-width: 1200px; /* Definir uma largura máxima para a largura do container */
+    max-width: 1200px; 
 }
 
 .header {
@@ -24,9 +24,9 @@ form {
 input[type="text"],
 input[type="email"],
 button {
-    width: 100%; /* Faz os inputs e botões ocuparem a largura total do seu container */
+    width: 100%; 
     padding: 10px;
-    margin-bottom: 10px; /* Adiciona espaço entre os campos */
+    margin-bottom: 10px; 
     border-radius: 5px;
     border: 1px solid #ddd;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Operação bem-sucedida</title>
-    <link rel="stylesheet" href="estilo.css"> <!-- Assegure-se de que o caminho para o CSS está correto -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div class="container">
