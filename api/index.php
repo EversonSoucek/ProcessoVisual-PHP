@@ -21,6 +21,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
     <meta charset="UTF-8">
     <title>Visual software</title>
     <link rel="stylesheet" href="./estilosIndex.css">
+    <link rel="icon" href="data:image/x-icon;,">
 </head>
 <body>
     <div class="header">

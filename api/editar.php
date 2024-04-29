@@ -22,6 +22,7 @@ if (json_last_error() !== JSON_ERROR_NONE || !is_array($usuario)) {
     <meta charset="UTF-8">
     <title>Editar Usuário</title>
     <link rel="stylesheet" href="./estilosAdicionar.css">
+    <link rel="icon" href="data:image/x-icon;,">
 </head>
 <body>
     <div class="header">
