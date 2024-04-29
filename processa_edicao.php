@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'numero' => $numero,
     ]);
 
-    $ch = curl_init("http://localhost:3500/{$id}");
+    $ch = curl_init("https://processo-seletivo-backend-9ae3435cd654.herokuapp.com/{$id}");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
     curl_setopt($ch, CURLOPT_POSTFIELDS, $dadosParaEnviar);

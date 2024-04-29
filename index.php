@@ -1,6 +1,6 @@
 <?php
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://localhost:3500/"); 
+curl_setopt($ch, CURLOPT_URL, "https://processo-seletivo-backend-9ae3435cd654.herokuapp.com/"); 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 if (curl_errno($ch)) {

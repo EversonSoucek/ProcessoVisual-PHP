@@ -2,7 +2,7 @@
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $ch = curl_init('http://localhost:3500/' . $id);  
+    $ch = curl_init('https://processo-seletivo-backend-9ae3435cd654.herokuapp.com/' . $id);  
 
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

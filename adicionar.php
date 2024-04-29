@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'numero' => $numero,
     ]);
 
-    $ch = curl_init('http://localhost:3500/');
+    $ch = curl_init('https://processo-seletivo-backend-9ae3435cd654.herokuapp.com/');
 
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
