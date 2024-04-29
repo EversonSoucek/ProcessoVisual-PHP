@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Operação bem-sucedida</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="data:image/x-icon;,">
 </head>
 <body>
     <div class="container">
